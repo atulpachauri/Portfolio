@@ -173,12 +173,12 @@ def form5():
 @calculate_bp.route("/armstrong", methods=['GET','POST'])
 def armstrong():
     if request.method == "GET":
-        return render_template("index.html")
+        return render_template("form7.html")
 
     num_str = request.form.get("Enter your number", "").strip()
 
     if not num_str.isdigit():
-        return render_template("index.html", dt=f"Invalid input '{num_str}'. Please enter a valid number (e.g., 123)")
+        return render_template("form7.html", dt=f"Invalid input '{num_str}'. Please enter a valid number (e.g., 123)")
 
     n = int(num_str)
     s = sum(int(d) ** 3 for d in num_str)
@@ -188,7 +188,7 @@ def armstrong():
     else:
         msg = "Not an Armstrong number"
 
-    return render_template("index.html", dt=f"You entered '{num_str}' = '{msg}'")
+    return render_template("form7.html", dt=f"You entered '{num_str}' = '{msg}'")
 
 
 # ---------------- PELINDROME ----------------

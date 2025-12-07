@@ -1,4 +1,4 @@
-# FROM python:3.12-slim
+FROM python:3.12-slim
 # WORKDIR /app
 # RUN pip install flask
 # RUN pip install gunicorn
@@ -19,14 +19,14 @@
 # CMD [ "gunicorn", "--workers=5", "--bind", "0.0.0.0:8000","app:app"]
 
 # test code
-FROM python:3.12-slim
-WORKDIR /app
-RUN pip install flask
-# RUN pip install gunicorn
-COPY . .
-# COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-CMD [ "python","app.py"]
+# FROM python:3.12-slim
+# WORKDIR /app
+# RUN pip install flask
+# # RUN pip install gunicorn
+# COPY . .
+# # COPY requirements.txt .
+# RUN pip install --no-cache-dir -r requirements.txt
+# CMD [ "python","app.py"]
 
 
 # new codes

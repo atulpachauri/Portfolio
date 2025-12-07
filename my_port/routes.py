@@ -24,7 +24,7 @@ def port_home():
     conn.close()
 
     return render_template(
-        "portfolio.html",
+        "index.html",
         socials=socials,
         skills=skills,
         projects=projects,

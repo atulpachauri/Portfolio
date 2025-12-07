@@ -27,28 +27,28 @@
 #         condition: any
 
 # test code
-services:
-  web:
-    build:
-      context: .
-    # build: .
-    ports:
-      - "80:8000"
-    volumes:
-      - ./merged_app:/app
-      # - ./instance:/app/instance 
-    deploy:
-      restart_policy:
-        condition: any
+# services:
+#   web:
+#     build:
+#       context: .
+#     # build: .
+#     ports:
+#       - "80:8000"
+#     volumes:
+#       - ./merged_app:/app
+#       # - ./instance:/app/instance 
+#     deploy:
+#       restart_policy:
+#         condition: any
 
-  updater:
-    build:
-      context: .
-    # build: .
-    command: ["tail", "-f", "/dev/null"]
-    volumes:
-      - ./merged_app:/app
-      # - ./instance:/app/instance 
-    deploy:
-      restart_policy:
-        condition: any
+#   updater:
+#     build:
+#       context: .
+#     # build: .
+#     command: ["tail", "-f", "/dev/null"]
+#     volumes:
+#       - ./merged_app:/app
+#       # - ./instance:/app/instance 
+#     deploy:
+#       restart_policy:
+#         condition: any
