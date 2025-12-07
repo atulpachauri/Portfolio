@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>App world</title>
+  </head>
+  <body>
+    <!-- <h1>Hello, world!</h1> -->
+     <!-- Add nevigation -->
+    <!-- <nav class="navbar justify" style="background-color: #1681e4;" data-bs-theme="light">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand margin" style="color: #ffffff;">Factorial App</a>
+    </nav>
+       <form class="d-flex" style="color: #ffffff;" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success me-4" style="color: #ffffff; border-color: #ffffff;" type="submit">Search</button>
+        </form>
+      </div> -->
+    <!-- </nav> -->
+
+
+
+
+    <nav class="navbar justify" style="background-color: #1681e4;" data-bs-theme="light">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" style="color: #000000;"  href="{{url_for('calculate_bp.home')}}" >Apps</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" style="color: #000000; background-color: #0dcaf0; border-color: #0dcaf0;" aria-current="page" href="{{url_for('calculate_bp.form3')}}" >Word App</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li> -->
+      </ul>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <a href="{{url_for('port_bp.port_home')}}" >
+            <button class="btn btn-info me-md-2 btn-lg" type="button" >Portfolio</button>
+        </a>
+      </div>
+    <!-- <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="color: #ffffff;">Flask App</a>
+    </nav>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div> -->
+
+    </nav>
+
+
+    
+   
+  </body>
+<body>
+
+<br />
+    <div class=" row g-3 ms-5" style="margin-right: 0;">
+        <div class="col-auto">
+            <h1>Find the Longest word</h1>
+        </div>  
+    </div>
+
+
+<br />
+
+
+    <!-- <form class="row g-3">
+        <div class="col-auto">
+            <label for="staticEmail2" class="visually-hidden">Email</label>
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="  ">
+        </div>
+        <div class="col-auto">
+            <label for="inputPassword2" class="visually-hidden">Password</label>
+            <input type="Enter your number" class="form-control" id="inputPassword2" placeholder="Enter your number">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Confirm</button>
+        </div>
+    </form> -->
+<br />
+    <form class="row g-3 ms-3" style="margin-right: 0;" action="{{url_for('calculate_bp.form3')}}" method="post">
+        <div class="col-auto">
+            <input type="text" name="Enter your number" placeholder="Enter your text" required="required">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary btn-block btn-large">submit</button>
+        </div>
+    </form>
+
+<br />
+    <div class=" row g-3 ms-3" style="margin-right: 0;">
+        <div class="col-auto">
+           <h3>{{num}}</h3>
+        </div>  
+    </div>
+<br/>
+<!-- input form  -->
+    <!-- <form action="/submit" method="post">
+        Name: <input type="text" name="Enter your number">
+        <input type="submit" value="Submit">
+    </form> -->
+<!-- input form -->
+<br />
+
+    <div class="container px-4 text-center">
+      <div class="row gx-5">
+        <div class="col">
+          <div class="p-3">
+              <p>Note:- Find the longest word from the given Text</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body> 
+
+ </html>

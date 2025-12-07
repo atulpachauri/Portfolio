@@ -1,0 +1,46 @@
+{
+  "build": "h885b0b7_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [
+    "expat 2.7.3.*"
+  ],
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30133"
+  ],
+  "extracted_package_dir": "C:\\Users\\Codenester\\anaconda3\\pkgs\\libexpat-2.7.3-h885b0b7_1",
+  "files": [
+    "Library/bin/libexpat.dll",
+    ".nonadmin"
+  ],
+  "fn": "libexpat-2.7.3-h885b0b7_1.conda",
+  "license": "MIT",
+  "link": {
+    "source": "C:\\Users\\Codenester\\anaconda3\\pkgs\\libexpat-2.7.3-h885b0b7_1",
+    "type": 1
+  },
+  "md5": "a9ae913966e1249c91444cb4357b3d74",
+  "name": "libexpat",
+  "package_tarball_full_path": "C:\\Users\\Codenester\\anaconda3\\pkgs\\libexpat-2.7.3-h885b0b7_1.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Library/bin/libexpat.dll",
+        "path_type": "hardlink",
+        "sha256": "429f67f652ef95e79286e0b832fd30fd704003432d3883c5712fa76d2a6c436f",
+        "sha256_in_prefix": "429f67f652ef95e79286e0b832fd30fd704003432d3883c5712fa76d2a6c436f",
+        "size_in_bytes": 276808
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "ffd867f2c24c5f3b495f84958e2495a7a40b9446a61b361ac1b8d8bea9b893e1",
+  "size": 76477,
+  "subdir": "win-64",
+  "timestamp": 1764928966000,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/libexpat-2.7.3-h885b0b7_1.conda",
+  "version": "2.7.3"
+}

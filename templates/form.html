@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>App world</title>
+  </head>
+  <body>
+    <!-- <h1>Hello, world!</h1> -->
+     <!-- Add nevigation -->
+    <!-- <nav class="navbar justify" style="background-color: #1681e4;" data-bs-theme="light">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand margin" style="color: #ffffff;">Factorial App</a>
+    </nav>
+       <form class="d-flex" style="color: #ffffff;" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success me-4" style="color: #ffffff; border-color: #ffffff;" type="submit">Search</button>
+        </form>
+      </div> -->
+    <!-- </nav> -->
+
+
+
+
+    <nav class="navbar justify" style="background-color: #1681e4;" data-bs-theme="light">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" style="color: #000000;"  href="{{url_for('calculate_bp.home')}}" >Apps</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" style="color: #000000; background-color: #0dcaf0; border-color: #0dcaf0;" aria-current="page" href="{{url_for('calculate_bp.form')}}" >Factorial App</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li> -->
+      </ul>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <a href="{{url_for('port_bp.port_home')}}" >
+            <button class="btn btn-info me-md-2 btn-lg" type="button" >Portfolio</button>
+        </a>
+      </div>
+    <!-- <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="color: #ffffff;">Flask App</a>
+    </nav>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div> -->
+
+    </nav>
+
+
+    
+   
+  </body>
+<!-- <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/IR/FZ/ML/81958724/spiral-notebook-500x500.jpg" class="rounded mx-auto d-block" alt="dislay error"> -->
+<body>
+    <!-- <img src="https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_624,h_351,q_auto,f_auto/v1611723380/1611723379.jpg" width="200" class="rounded mx-auto d-block" alt="dislay error"> -->
+    <!-- <img src="/FLASK2025/images/my_pic.jpeg" alt="dislay error"> -->
+
+<br />
+    <div class=" row g-3 ms-5" style="margin-right: 0;">
+        <div class="col-auto">
+            <h1>Calculate Factorial </h1>
+        </div>  
+    </div>
+
+
+<br />
+
+
+    <!-- <form class="row g-3">
+        <div class="col-auto">
+            <label for="staticEmail2" class="visually-hidden">Email</label>
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="  ">
+        </div>
+        <div class="col-auto">
+            <label for="inputPassword2" class="visually-hidden">Password</label>
+            <input type="Enter your number" class="form-control" id="inputPassword2" placeholder="Enter your number">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Confirm</button>
+        </div>
+    </form> -->
+<br />
+    <form class="row g-3 ms-3" style="margin-right: 0;" action="{{url_for('calculate_bp.form')}}" method="post">
+        <div class="col-auto">
+            <input type="text" name="Enter your number" placeholder="Enter your number" required="required">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary btn-block btn-large">submit</button>
+        </div>
+    </form>
+
+<br />
+    <div class=" row g-3 ms-3" style="margin-right: 0;">
+        <div class="col-auto">
+            <h3> {{score}} </h3>
+        </div>  
+    </div>
+<br/>
+    <!-- <div class=" row g-3 ms-3">
+        <div class="col-auto">
+            <h5> 
+                <p>Note:- The Factorial of a positive integer n is defined as the product of all positive integers from 1 to n. For example, 5! = 5 × 4 × 3 × 2 × 1 = 120. However, the factorial of a negative integer has no defined meaning, because the product of negative integers would never end. For instance, -1! would imply multiplying -1 by -2, -3, -4, and so on, which is impossible. Therefore, -1 factorial is undefined</p>
+            </h5>
+        </div>  
+    </div> -->
+    <div class="container px-4 text-center">
+      <div class="row gx-5">
+        <div class="col">
+          <div class="p-3">
+              <p>Note:- The Factorial of a positive integer n is defined as the product of all positive integers from 1 to n. For example, 5! = 5 × 4 × 3 × 2 × 1 = 120. However, the factorial of a negative integer has no defined meaning, because the product of negative integers would never end. For instance, -1! would imply multiplying -1 by -2, -3, -4, and so on, which is impossible. Therefore, -1 factorial is undefined</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+</body> 
+
+ </html>
